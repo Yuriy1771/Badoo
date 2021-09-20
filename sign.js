@@ -9,7 +9,7 @@ const sliderLine = document.querySelector("#slider-line")
 
 let like = document.querySelector("#like").addEventListener("click", function() {
     offset = offset + 300;
-    if (offset > 2100) {
+    if (offset > 2400) {
         offset = 0;
     }
     sliderLine.style.left = -offset + 'px';
@@ -17,7 +17,7 @@ let like = document.querySelector("#like").addEventListener("click", function() 
 
 let dis = document.querySelector("#dislike").addEventListener("click", function() {
     offset = offset + 300;
-    if (offset > 2100) {
+    if (offset > 2400) {
         offset = 0;
     }
     sliderLine.style.left = -offset + 'px';
@@ -28,7 +28,7 @@ let prev = document.querySelector("#prev").addEventListener("click", function() 
     if (sum >= 100) {
         offset = offset - 300;
         if (offset < 0) {
-            offset = 2100;
+            offset = 2400;
         }
         sliderLine.style.left = -offset + 'px';
     } else {
