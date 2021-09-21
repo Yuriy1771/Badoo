@@ -26,6 +26,8 @@ let dis = document.querySelector("#dislike").addEventListener("click", function(
 let prev = document.querySelector("#prev").addEventListener("click", function() {
     let sum = prompt('Что бы вернуться назад заплатите 100 рублей');
     if (sum >= 100) {
+        alert("Пожалуйста подождите, ваш платеж обрабатывается ⌛");
+        alert("Ваш платеж успешно завершен 👍")
         offset = offset - 300;
         if (offset < 0) {
             offset = 2400;

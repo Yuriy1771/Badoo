@@ -6,6 +6,7 @@ exit.onclick = function() {
 
 let offset = 0; //смещение от левого края
 const sliderLine = document.querySelector("#slider-line")
+let slid = document.querySelector("#slider");
 
 let like = document.querySelector("#like").addEventListener("click", function() {
     offset = offset + 300;
@@ -13,6 +14,7 @@ let like = document.querySelector("#like").addEventListener("click", function() 
         offset = 0;
     }
     sliderLine.style.left = -offset + 'px';
+    // slider.style.border = "2px solid #61d480";
 });
 
 let dis = document.querySelector("#dislike").addEventListener("click", function() {
@@ -21,11 +23,15 @@ let dis = document.querySelector("#dislike").addEventListener("click", function(
         offset = 0;
     }
     sliderLine.style.left = -offset + 'px';
+    // slider.style.border = "2px solid #d64747";
+
 });
 
 let prev = document.querySelector("#prev").addEventListener("click", function() {
     let sum = prompt('Что бы вернуться назад заплатите 100 рублей');
     if (sum >= 100) {
+        alert("Пожалуйста подождите, ваш платеж обрабатывается ⌛");
+        alert("Ваш платеж успешно завершен 👍")
         offset = offset - 300;
         if (offset < 0) {
             offset = 900;
