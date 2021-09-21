@@ -28,9 +28,9 @@ let man = document.querySelector('#man');
 let woman = document.querySelector('#woman');
 
 man.onclick = function() {
-    document.location.href = "man.html";
+    document.location.href = "woman.html";
 }
 
 woman.onclick = function() {
-    document.location.href = "woman.html";
+    document.location.href = "man.html";
 }
