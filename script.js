@@ -1,7 +1,7 @@
 let sign = document.querySelector('#but');
 
 sign.onclick = function() {
-    document.location.href = "sign.html";
+    document.location.href = "woman.html";
 }
 
 const time = 10000;
@@ -28,9 +28,9 @@ let man = document.querySelector('#man');
 let woman = document.querySelector('#woman');
 
 man.onclick = function() {
-    document.location.href = "sign.html";
+    document.location.href = "man.html";
 }
 
 woman.onclick = function() {
-    document.location.href = "sign.html";
+    document.location.href = "woman.html";
 }
